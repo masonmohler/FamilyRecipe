@@ -20,7 +20,6 @@ html {
 /*  --------------- Global Styles -----------------  */
 
 body {
-  font-family: "DM Sans", sans-serif;
   margin: 0;
   text-align: center;
   font-family: "Libre Baskerville", serif;
@@ -101,6 +100,81 @@ main.recipe-list {
 
 .recipe-card a:last-child {
   margin-bottom: 1rem;
+}
+
+.main-list ul {
+  text-align: left;
+}
+
+.main-list ul li {
+  margin-bottom: 0.5rem;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.ingredient-input {
+  display: flex;
+}
+
+.ingredient-input input {
+  flex-grow: 1;
+  margin-right: 8px;
+}
+
+#addRecipe {
+  background-color: rgb(208, 174, 197, 10%);
+  border: 3px solid #f2e9ef;
+  font-size: 24px;
+  padding: 5px;
+  color: #f2e9ef;
+  font-family: "Libre Baskerville", serif;
+  border-radius: 0.5rem;
+}
+
+#recipesList {
+  text-align: left;
+}
+
+#add {
+  padding: 0.5rem;
+  margin: 0rem 0.5rem 0.5rem 0.5rem;
+  text-decoration: none;
+  color: #f2e9ef;
+  background-color: rgb(208, 174, 197, 10%);
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background-color: rgb(208, 174, 197, 10%);
+  margin-bottom: 1rem;
+  border: 3px solid #f2e9ef;
+  font-size: 12px;
+  padding: 5px;
+  color: #f2e9ef;
+  font-family: "Libre Baskerville", serif;
+  border-radius: 0.5rem;
 }
 
 footer {

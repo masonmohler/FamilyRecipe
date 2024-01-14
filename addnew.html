@@ -16,13 +16,39 @@
   </head>
 
   <body class="container">
-
     <nav>
       <a href="index.html">Home</a>
       <a href="recipes.html">View Recipes</a>
       <a href="grocerylist.html">View Grocery List</a>
     </nav>
+    <main class="addNewRecipe">
+      <form>
+        <label for="recipeTitle">Recipe Title</label>
+        <input type="text" id="recipeTitle" name="recipeTitle" required />
 
+        <label for="ingredientList">Ingredient List</label>
+        <div id="ingredientContainer">
+          <div class="ingredient-input">
+            <input type="text" class="ingredient" name="ingredient" required />
+          </div>
+        </div>
+        <button type="button" onclick="addIngredient()">Add Ingredient</button>
+
+        <label for="preparationInstructions">Preparation Instructions</label>
+        <textarea
+          id="preparationInstructions"
+          name="preparationInstructions"
+          rows="6"
+          required
+        ></textarea>
+
+        <button type="button " id="addRecipe" onclick="generateRecipePage()">
+          Add Recipe
+        </button>
+      </form>
+    </main>
     <footer>&copy; 2024 Mason Mohler. All rights reserved.</footer>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
